@@ -1,0 +1,13 @@
+C:\devbuild4\ValidatingInput\bin\Debug\netcoreapp3.1\ValidatingInput.exe
+C:\devbuild4\ValidatingInput\bin\Debug\netcoreapp3.1\ValidatingInput.deps.json
+C:\devbuild4\ValidatingInput\bin\Debug\netcoreapp3.1\ValidatingInput.runtimeconfig.json
+C:\devbuild4\ValidatingInput\bin\Debug\netcoreapp3.1\ValidatingInput.runtimeconfig.dev.json
+C:\devbuild4\ValidatingInput\bin\Debug\netcoreapp3.1\ValidatingInput.dll
+C:\devbuild4\ValidatingInput\bin\Debug\netcoreapp3.1\ValidatingInput.pdb
+C:\devbuild4\ValidatingInput\obj\Debug\netcoreapp3.1\ValidatingInput.csprojAssemblyReference.cache
+C:\devbuild4\ValidatingInput\obj\Debug\netcoreapp3.1\ValidatingInput.AssemblyInfoInputs.cache
+C:\devbuild4\ValidatingInput\obj\Debug\netcoreapp3.1\ValidatingInput.AssemblyInfo.cs
+C:\devbuild4\ValidatingInput\obj\Debug\netcoreapp3.1\ValidatingInput.csproj.CoreCompileInputs.cache
+C:\devbuild4\ValidatingInput\obj\Debug\netcoreapp3.1\ValidatingInput.dll
+C:\devbuild4\ValidatingInput\obj\Debug\netcoreapp3.1\ValidatingInput.pdb
+C:\devbuild4\ValidatingInput\obj\Debug\netcoreapp3.1\ValidatingInput.genruntimeconfig.cache
