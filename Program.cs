@@ -85,7 +85,7 @@ namespace ValidatingInput
         public static string PhoneRegex(string testphone)
         {
             string answer;
-            Regex phoneRegex = new Regex(@"^[(]{0,1}[0-9]{3}[)]{0,1}[-]{0,1}[.]{0,1}[0-9]{3}[-]{0,1}[.]{0,1}[0-9]{4}$");
+            Regex phoneRegex = new Regex(@"^\({0,1}[0-9]{3}\){0,1}-{0,1}\.{0,1}[0-9]{3}-{0,1}\.{0,1}[0-9]{4}$");
             bool matchPhoneRegex = phoneRegex.IsMatch(testphone);
 
             if (matchPhoneRegex)
@@ -102,7 +102,7 @@ namespace ValidatingInput
         public static string DateRegex(string testdate)
         {
             string answer;
-            Regex dateRegex = new Regex(@"^([1-9]|[0-2][0-9]|3[0-1])[/]([1-9]|1[012]|0[1-9])[/][0-9]{4}$");
+            Regex dateRegex = new Regex(@"^([1-9]|[0-2][0-9]|3[0-1])/([1-9]|1[012]|0[1-9])/[0-9]{4}$");
             bool matchDateRegex = dateRegex.IsMatch(testdate);
 
             if (matchDateRegex)
