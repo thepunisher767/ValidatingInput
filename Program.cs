@@ -115,7 +115,7 @@ namespace ValidatingInput
 
         public static void HTMLRegex(string testhtml)
         {
-            Regex htmlRegex = new Regex(@"^<([!]*[-]*[.]*\w*)>.*</\1>$");
+            Regex htmlRegex = new Regex(@"^<([!\-.\w]*)>.*</\1>$");
             bool matchHTMLRegex = htmlRegex.IsMatch(testhtml);
 
             if (matchHTMLRegex)
