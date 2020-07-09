@@ -31,17 +31,26 @@ namespace ValidatingInput
                 Console.Write($"\nPlease enter a valid Date: ");
                 DateRegex(Console.ReadLine());
 
+                Console.Write($"\nPlease enter a valid HTML tag: ");
+                HTMLRegex(Console.ReadLine());
 
-                Console.Write($"\nWould you like to try again?? (q to Quit): ");
-                string userInput = Console.ReadLine();
-                userInput = userInput.ToLower();
-
-                if (userInput == "q")
-                {
-                    continueFlag = false;
-                }
+                continueFlag = KeepGoing(continueFlag);
             }
             Console.WriteLine($"\nGood Bye!!!!!!!!!!!");
+        }
+
+        private static bool KeepGoing(bool continueFlag)
+        {
+            Console.Write($"\nWould you like to try again?? (q to Quit): ");
+            string userInput = Console.ReadLine();
+            userInput = userInput.ToLower();
+
+            if (userInput == "q")
+            {
+                continueFlag = false;
+            }
+
+            return continueFlag;
         }
 
         public static void NameRegex(string testname)
@@ -101,6 +110,21 @@ namespace ValidatingInput
             else
             {
                 Console.WriteLine("Sorry, date is not valid!");
+            }
+        }
+
+        public static void HTMLRegex(string testhtml)
+        {
+            Regex htmlRegex = new Regex(@"^<([!]*[-]*[.]*\w*)>\w*</\1>$");
+            bool matchHTMLRegex = htmlRegex.IsMatch(testhtml);
+
+            if (matchHTMLRegex)
+            {
+                Console.WriteLine("HTML is valid!");
+            }
+            else
+            {
+                Console.WriteLine("Sorry, HTML is not valid!");
             }
         }
     }
