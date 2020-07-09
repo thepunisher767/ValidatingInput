@@ -8,7 +8,11 @@ namespace ValidatingInput
     {
         static void Main(string[] args)
         {
+            LoopyMcLoopyPants();
+        }
 
+        private static void LoopyMcLoopyPants()
+        {
             bool continueFlag = true;
 
             while (continueFlag)
@@ -41,7 +45,6 @@ namespace ValidatingInput
                     continueFlag = false;
                 }
             }
-
             Console.WriteLine($"\nGood Bye!!!!!!!!!!!");
         }
 
